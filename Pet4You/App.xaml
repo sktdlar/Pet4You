@@ -4,6 +4,14 @@
              xmlns:local="clr-namespace:Pet4You"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="28"/>
+        </Style>
+        <Style TargetType="Hyperlink"
+                   BasedOn="{StaticResource {x:Type Hyperlink}}">
+            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="TextDecorations" Value="None"/>
+        </Style>
     </Application.Resources>
 </Application>
