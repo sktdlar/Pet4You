@@ -7,7 +7,44 @@
         mc:Ignorable="d"
         Title="MainWindow"
         Height="1080" Width="1920" WindowStartupLocation="CenterOwner">
-    <Grid>
-        
+    <Grid Name="MainGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Panel.ZIndex="0" Source="/Pages/fon.png" Stretch="UniformToFill"/>
+        <Frame Name="MainFrame" Grid.Row="1" Grid.RowSpan="2"/>
+        <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBlock  Margin="10"><Hyperlink Name="ActivityPart" Click="PartClick">Активность</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink Name="HealthPart" Click="PartClick">Здоровье</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink Name="FoodPart" Click="PartClick">Питание</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink Name="PetMedPart" Click="PartClick">Ветеринар</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" Name="ActivitySp" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBlock Margin="10"><Hyperlink Click="Hyperlink_Click">Прогулка</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Игры</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Плескания</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Добавть</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" Name="HealthSp" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBlock Margin="10"><Hyperlink>Самочувствие</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Витамины</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Патология</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Добавать</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" Name="FoodSp" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBlock Margin="10"><Hyperlink>Виды</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Дополнить</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Кормление</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Список</Hyperlink></TextBlock>
+        </StackPanel>
+        <StackPanel Visibility="Collapsed" Name="PetMedSp" Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
+            <TextBlock Margin="10"><Hyperlink>Прививки</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Лечение</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Запрет</Hyperlink></TextBlock>
+            <TextBlock Margin="10"><Hyperlink>Чат</Hyperlink></TextBlock>
+        </StackPanel>
     </Grid>
 </Window>
+

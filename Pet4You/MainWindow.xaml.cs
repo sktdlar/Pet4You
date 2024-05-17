@@ -24,5 +24,33 @@ namespace Pet4You
         {
             InitializeComponent();
         }
+            public void AllClose()
+            {
+                HealthSp.Visibility = Visibility.Collapsed;
+                ActivitySp.Visibility = Visibility.Collapsed;
+                FoodSp.Visibility = Visibility.Collapsed;
+                PetMedSp.Visibility = Visibility.Collapsed;
+                Grid.SetRow(MainFrame, 1);
+            }
+            private void PartClick(object sender, RoutedEventArgs e)
+            {
+                AllClose();
+                string text = (sender as Hyperlink).Name;
+                if (text == "ActivityPart")
+                    ActivitySp.Visibility = Visibility.Visible;
+                if (text == "HealthPart")
+                    HealthSp.Visibility = Visibility.Visible;
+                if (text == "FoodPart")
+                    FoodSp.Visibility = Visibility.Visible;
+                if (text == "PetMedPart")
+                    PetMedSp.Visibility = Visibility.Visible;
+                Grid.SetRow(MainFrame, 2);
+            }
+
+            private void Hyperlink_Click(object sender, RoutedEventArgs e)
+            {
+                AllClose();
+            }
+        }
     }
-}
+
