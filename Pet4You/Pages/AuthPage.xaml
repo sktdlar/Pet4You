@@ -1,0 +1,33 @@
+﻿<Page x:Class="Pet4You.Pages.AuthPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Pet4You.Pages"
+      mc:Ignorable="d" 
+      Height="800" Width="1200" Background="White"
+      Title="AuthPage">
+
+    <Grid>
+        <StackPanel Name="EnterCode" Visibility="Visible" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" FontSize="32">Вход</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10" Text="Введите почту"/>
+                <TextBox x:Name="EmailTb" Width="400" Margin="10" FontSize="24" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <Button Name="SendCodeBtn" Margin="10" Click="SendCodeBtn_Click">
+                Отправить код
+            </Button>
+        </StackPanel>
+        <StackPanel Name="ApplyCode" Visibility="Collapsed" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock HorizontalAlignment="Center" FontSize="32">Вход</TextBlock>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="10" Text="Введите код"/>
+                <TextBox x:Name="CodeTb" Width="400" Margin="10" FontSize="24" VerticalContentAlignment="Center"/>
+            </StackPanel>
+            <Button Name="Apply" Margin="10" Click="Apply_Click">
+                Подтвердить
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
