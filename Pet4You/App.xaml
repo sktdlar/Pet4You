@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:Pet4You"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
         <SolidColorBrush x:Key="BackgroundColor" Color="#FFFFFF" />
         <SolidColorBrush x:Key="ForegroundColor" Color="#83684D" />
         <SolidColorBrush x:Key="AccentColor" Color="#BD987D"/>
@@ -42,8 +43,13 @@
         <Style TargetType="Hyperlink"
                    BasedOn="{StaticResource {x:Type Hyperlink}}">
             <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="TextDecorations" Value="None"/>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="28"/>
         </Style>
+        <Style TargetType="Hyperlink"
+                   BasedOn="{StaticResource {x:Type Hyperlink}}">
+            <Setter Property="Foreground" Value="Black"/>
+
     </Application.Resources>
 </Application>
