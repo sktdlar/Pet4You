@@ -14,7 +14,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image Panel.ZIndex="0" Source="/Pages/fon.png" Stretch="UniformToFill"/>
-        <Frame Name="MainFrame" Grid.Row="1" Grid.RowSpan="2"/>
+        <Frame Name="MainFrame" Grid.Row="1" Grid.RowSpan="2"/> 
         <StackPanel VerticalAlignment="Center" Orientation="Horizontal" Margin="10">
             <TextBlock  Margin="10"><Hyperlink Name="ActivityPart" Click="PartClick">Активность</Hyperlink></TextBlock>
             <TextBlock Margin="10"><Hyperlink Name="HealthPart" Click="PartClick">Здоровье</Hyperlink></TextBlock>
