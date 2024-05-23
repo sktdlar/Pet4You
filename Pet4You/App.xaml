@@ -39,17 +39,16 @@
             <Setter Property="CornerRadius" Value="1"></Setter>
         </Style>
 
-    
+
         <Style TargetType="Hyperlink"
                    BasedOn="{StaticResource {x:Type Hyperlink}}">
             <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
-
+        </Style>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="28"/>
         </Style>
-        <Style TargetType="Hyperlink"
-                   BasedOn="{StaticResource {x:Type Hyperlink}}">
-            <Setter Property="Foreground" Value="Black"/>
+        
+        
 
     </Application.Resources>
 </Application>
