@@ -91,8 +91,29 @@
     <Compile Include="Pages\WalkPage.xaml.cs">
       <DependentUpon>WalkPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControl\AddHealthUserControl.xaml.cs">
+      <DependentUpon>AddHealthUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\AddUserControl.xaml.cs">
+      <DependentUpon>AddUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\HealthUserControl.xaml.cs">
+      <DependentUpon>HealthUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\PathologyUserControl.xaml.cs">
+      <DependentUpon>PathologyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\SplashingUserControl.xaml.cs">
+      <DependentUpon>SplashingUserControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControl\UserControlGame.xaml.cs">
       <DependentUpon>UserControlGame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\VitaminsUserControl.xaml.cs">
+      <DependentUpon>VitaminsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\WalkUserControl.xaml.cs">
+      <DependentUpon>WalkUserControl.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -182,7 +203,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControl\AddHealthUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\AddUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\HealthUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\PathologyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\SplashingUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControl\UserControlGame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\VitaminsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl\WalkUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

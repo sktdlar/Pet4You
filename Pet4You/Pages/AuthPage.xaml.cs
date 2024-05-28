@@ -26,7 +26,7 @@ namespace Pet4You.Pages
         {
             InitializeComponent();
         }
-        int code = 0;
+        int code;
         private void SendCodeBtn_Click(object sender, RoutedEventArgs e)
         {
             MailAddress toAddress = new MailAddress(EmailTb.Text);
@@ -48,7 +48,6 @@ namespace Pet4You.Pages
             EnterCode.Visibility = Visibility.Collapsed;
             ApplyCode.Visibility = Visibility.Visible;
         }
-
         private void Apply_Click(object sender, RoutedEventArgs e)
         {
             if (CodeTb.Text == code.ToString())

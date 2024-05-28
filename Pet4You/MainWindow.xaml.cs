@@ -24,6 +24,7 @@ namespace Pet4You
         public MainWindow()
         {
             InitializeComponent();
+            MainFrame.Navigate(new AuthPage());
         }
 
         public void AllClose()
