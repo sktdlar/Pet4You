@@ -11,9 +11,9 @@
 
     <Grid>
         <StackPanel Panel.ZIndex="1" Orientation="Vertical" Margin="10">
-            <TextBlock  Style="{StaticResource CustomTextStyletwo}" Text="Запрет" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,20"/>
+            <TextBlock  Style="{DynamicResource CustomTextStyletwo}" Text="Запрет" FontSize="36" HorizontalAlignment="Center" Margin="0,10,0,20"/>
             <TextBox TextWrapping="Wrap" Height="270" Margin="9 9 9 9"/>
-            <Button Style="{StaticResource CustomButtonStyle}" x:Name="EnterBtn" Width="200" Margin="2" Padding="5">
+            <Button Style="{DynamicResource CustomButtonStyle}" x:Name="EnterBtn" Width="200" Margin="2" Padding="5">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="10"></Setter>

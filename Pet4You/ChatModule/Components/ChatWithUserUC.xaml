@@ -1,0 +1,37 @@
+﻿<UserControl Margin="10" MouseLeftButtonDown="UserControl_MouseLeftButtonDown" MouseEnter="UserControl_MouseEnter" MouseLeave="UserControl_MouseLeave" x:Class="Pet4You.ChatModule.Components.ChatWithUserUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pet4You.ChatModule.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="50" d:DesignWidth="380">
+    <UserControl.Resources>
+        <Style TargetType="UserControl">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="UserControl">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}">
+                            <ContentPresenter/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Storyboard x:Key="WriteEmailAnimation">
+            <DoubleAnimation Storyboard.TargetName="NameOfUser"
+                 Storyboard.TargetProperty="Opacity"
+                 To="0" Duration="0:0:0.1"/>
+            <DoubleAnimation Storyboard.TargetName="LittleHint"
+                 Storyboard.TargetProperty="Opacity"
+                 To="1" Duration="0:0:0.2"/>
+        </Storyboard>
+    </UserControl.Resources>
+
+    <Grid Width="380" Height="50" Background="#4CED8000">
+        <TextBlock Visibility="Visible" Margin="10 0 0 0" Name="NameOfUser" FontSize="20" VerticalAlignment="Center" Foreground="Black"></TextBlock>
+        <TextBlock Margin="10 0 0 0" Opacity="0" Name="LittleHint" FontSize="20" VerticalAlignment="Center" Foreground="Black">Написать сообщение ></TextBlock>
+    </Grid>
+</UserControl>

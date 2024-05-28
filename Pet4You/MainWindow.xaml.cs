@@ -1,4 +1,5 @@
-﻿using Pet4You.Pages;
+﻿using Pet4You.ChatModule.Pages;
+using Pet4You.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,8 @@ namespace Pet4You
         public MainWindow()
         {
             InitializeComponent();
-            MainFrame.Navigate(new AuthPage());
+            App.CurrentUser = App.db.User.ToList().First();
+            MainFrame.Navigate(new ChattingModulePage());
         }
 
         public void AllClose()
@@ -142,7 +144,7 @@ namespace Pet4You
 
         private void Hyperlink_Click_15(object sender, RoutedEventArgs e)
         {
-            MainFrame.Navigate(new ChatPage());
+            MainFrame.Navigate(new ChatModule.Pages.ChattingModulePage());
             AllClose();
         }
     }

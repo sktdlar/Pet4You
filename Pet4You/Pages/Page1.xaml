@@ -12,7 +12,7 @@
         <DockPanel Panel.ZIndex="1">
             <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical">
                 <Image Height="50" Width="50" Source="/Pages/Logo.png"></Image>
-                    <Button Style="{StaticResource CustomButtonStyle}" x:Name="AuthBtn" Width="200" Margin="2" Padding="5">
+                <Button Style="{DynamicResource CustomButtonStyle}" x:Name="AuthBtn" Width="200" Margin="2" Padding="5">
                     <Button.Resources>
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"></Setter>
@@ -20,7 +20,7 @@
                     </Button.Resources>
                     Авторизация
                 </Button>
-                <Button Style="{StaticResource CustomButtonStyle}" x:Name="RegBtn" Width="200" Margin="2" Padding="5">
+                <Button Style="{DynamicResource CustomButtonStyle}" x:Name="RegBtn" Width="200" Margin="2" Padding="5">
                     <Button.Resources >
                         <Style TargetType="Border">
                             <Setter Property="CornerRadius" Value="5"></Setter>
