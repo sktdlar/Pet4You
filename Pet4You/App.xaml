@@ -4,14 +4,51 @@
              xmlns:local="clr-namespace:Pet4You"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+
+        <SolidColorBrush x:Key="BackgroundColor" Color="#FFFFFF" />
+        <SolidColorBrush x:Key="ForegroundColor" Color="#83684D" />
+        <SolidColorBrush x:Key="AccentColor" Color="#BD987D"/>
+
+        <Style x:Key="CustomButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource BackgroundColor}" />
+            <Setter Property="Foreground" Value= "{StaticResource ForegroundColor}" />
+            <Setter Property="BorderThickness" Value="1" />
+            <Setter Property="Padding" Value="20" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+
+        <Style x:Key="CustomTextStyle" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource ForegroundColor}" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+
+        <Style x:Key="CustomTextStyletwo" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{StaticResource BackgroundColor}" />
+            <Setter Property="FontFamily" Value="Arial" />
+        </Style>
+        
+        <Style x:Key="CustomTextBoxStyle" TargetType="TextBox">
+            <Setter Property="Background"  Value="{StaticResource AccentColor}" />
+            <Setter Property="BorderBrush" Value="{StaticResource BackgroundColor}" />
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+        
+        <Style TargetType="Border">
+            <Setter Property="CornerRadius" Value="1"></Setter>
+        </Style>
+
+
+        <Style TargetType="Hyperlink"
+                   BasedOn="{StaticResource {x:Type Hyperlink}}">
+            <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
+        </Style>
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="28"/>
         </Style>
-        <Style TargetType="Hyperlink"
-                   BasedOn="{StaticResource {x:Type Hyperlink}}">
-            <Setter Property="Foreground" Value="Black"/>
-            <Setter Property="FontWeight" Value="Bold"/>
-            <Setter Property="TextDecorations" Value="None"/>
-        </Style>
+        
+        
+
     </Application.Resources>
 </Application>

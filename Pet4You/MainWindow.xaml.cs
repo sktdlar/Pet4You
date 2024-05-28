@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Pet4You.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,7 @@ namespace Pet4You
         {
             InitializeComponent();
         }
+
         public void AllClose()
         {
             HealthSp.Visibility = Visibility.Collapsed;
@@ -50,6 +52,98 @@ namespace Pet4You
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
             AllClose();
+
+        }
+
+        private void Hyperlink_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new GamePage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new SplashingPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_3(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new SplashingPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_4(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new HealthPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_5(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new VitaminsPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_6(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new PathologyPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_7(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new AddHealthPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_8(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new KindsPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_9(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ComplementPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_10(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new FeedingPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_11(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ListPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_12(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new VaccinationsPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_13(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new TreatmentPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_14(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ProhibitionPage());
+            AllClose();
+        }
+
+        private void Hyperlink_Click_15(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new ChatPage());
+            AllClose();
         }
     }
 }
+
