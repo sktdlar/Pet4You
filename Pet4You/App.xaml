@@ -43,9 +43,5 @@
         <Style TargetType="Hyperlink"
                    BasedOn="{StaticResource {x:Type Hyperlink}}">
             <Setter Property="Foreground" Value="{StaticResource ForegroundColor}"/>
-        </Style>
-        
-     
-    
     </Application.Resources>
 </Application>
